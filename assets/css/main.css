@@ -111,7 +111,8 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 400;
-		color: #483949;
+		/* color: #483949; */
+		color: #fff;
 		line-height: 1.25em;
 	}
 
@@ -2055,8 +2056,10 @@ input, select, textarea {
 	.button {
 		position: relative;
 		display: inline-block;
-		background: #df7366;
-		color: #fff;
+		/* background: #df7366; */
+		background: #ffd530;
+		/* color: #fff; */
+		color: black;
 		text-align: center;
 		border-radius: 0.5em;
 		text-decoration: none;
@@ -2064,7 +2067,7 @@ input, select, textarea {
 		border: 0;
 		cursor: pointer;
 		outline: 0;
-		font-weight: 300;
+		font-weight: 500;
 		-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
@@ -2176,7 +2179,8 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		background-image: url("../../images/header.jpg");
+		/* background-image: url("../../images/header.jpg"); */
+		background-image: url("../../images/step17_UAV_30_opacity78.png");
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
@@ -2222,10 +2226,10 @@ input, select, textarea {
 
 		#header .button {
 			display: inline-block;
-			border-radius: 100%;
+			border-radius: 8px;
 			width: 4.5em;
-			height: 4.5em;
-			line-height: 4.5em;
+			height: 2.5em;
+			line-height: 2.5em;
 			text-align: center;
 			font-size: 1.25em;
 			padding: 0;
