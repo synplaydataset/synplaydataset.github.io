@@ -1,0 +1,135 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "SynPlayDataset",
+  "description": "We introduce Synthetic Playground (SynPlay) Dataset, a new synthetic human datset that aims to bring out the diversity of human apperance in the real world. We focus on thwo factors to achieve a level of diversity that has not yet been seen in previous works: i) realistic human motions and poses and ii) multiple camera viewpoints towards human instances. We first use a game engine and its library-provided elementary motions to create games where virtual players can take less-constrained and natural movements while following the game rules (i.e., rule-guided motion design as opposed to detail-guided design). We then augment the elementary motions with real human motions captured with a motion capture device. To render various human appearances in the games from multiple viewpoints, we use seven virtual cameras encompassing the ground and aerial views, capturing abundant aerial-vs-ground and dynamic-vs-static attributes of the scene. Through extensive and carefully-designed experiments, we show that using SynPlay in model training leads to enhanced accuracy over existing synthetic datasets for human detection and segmentation. The benefit of SynPlay becomes even greater for tasks in the data-scarce regime, such as few-shot and cross-domain learning tasks. These results clearly demonstrate that SynPlay can be used as an essential dataset with rich attributes of complex human appearances and poses suitable for model pretraining. SynPlay dataset comprising over 73k images and 6.5M human instances, is available for download at https://synplaydataset.github.io/.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "@article{synplay2024, title={SynPlay: Importing Real-world Diversity for a Synthetic Human Datasets}, author={Jinsub Yim and Hyungtae Lee and Sungmin Eum and Yi-Ting Shen and Yan Zhang and Shuvra S. Bhattacharyya}, year={2024}, eprint={2005.14165}, archivePrefix={arXiv}, primaryClass={cs.CL} }",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "synplaydataset.github.io",
+  "version": "1.0.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "game01",
+      "name": "game01",
+      "description": "Game01 of SynPlay Dataset on GoogleDrive.",
+      "contentUrl": "https://drive.google.com/uc?export=download&id=1D3E4I8MJ_vBTr1in1mwqQsiZqhXiQ53g",
+      "encodingFormat": "images/jpeg",
+      "sha256": "379a9cc796d337ee79753a17c5066b3970b9931856f9727ca54a9b118281d2bd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "game02",
+      "name": "game02",
+      "description": "Game02 of SynPlay Dataset on GoogleDrive.",
+      "contentUrl": "https://drive.google.com/uc?export=download&id=1yQlOA0Zo8W6aUEWmw-10P-Eb3KlKn4A_",
+      "encodingFormat": "images/jpeg",
+      "sha256": "942638b0acdf7d701def9efeb80519dba8b8dce5eeec38fe1233847b1014c928"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "game03",
+      "name": "game03",
+      "description": "Game03 of SynPlay Dataset on GoogleDrive.",
+      "contentUrl": "https://drive.google.com/uc?export=download&id=1yQlOA0Zo8W6aUEWmw-10P-Eb3KlKn4A_",
+      "encodingFormat": "images/jpeg",
+      "sha256": "942638b0acdf7d701def9efeb80519dba8b8dce5eeec38fe1233847b1014c928"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "game04",
+      "name": "game04",
+      "description": "Game04 of SynPlay Dataset on GoogleDrive.",
+      "contentUrl": "https://drive.google.com/uc?export=download&id=1yQlOA0Zo8W6aUEWmw-10P-Eb3KlKn4A_",
+      "encodingFormat": "images/jpeg",
+      "sha256": "942638b0acdf7d701def9efeb80519dba8b8dce5eeec38fe1233847b1014c928"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "game05",
+      "name": "game05",
+      "description": "Game03 of SynPlay Dataset on GoogleDrive.",
+      "contentUrl": "https://drive.google.com/uc?export=download&id=1yQlOA0Zo8W6aUEWmw-10P-Eb3KlKn4A_",
+      "encodingFormat": "images/jpeg",
+      "sha256": "942638b0acdf7d701def9efeb80519dba8b8dce5eeec38fe1233847b1014c928"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "game06",
+      "name": "game06",
+      "description": "Game03 of SynPlay Dataset on GoogleDrive.",
+      "contentUrl": "https://drive.google.com/uc?export=download&id=1yQlOA0Zo8W6aUEWmw-10P-Eb3KlKn4A_",
+      "encodingFormat": "images/jpeg",
+      "sha256": "942638b0acdf7d701def9efeb80519dba8b8dce5eeec38fe1233847b1014c928"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "scenario01",
+      "name": "scenario01",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "viewpoint01",
+          "name": "viewpoint01",
+          "description": "metadata for viewpoint01 of a specific scenario of a specific game in SynPlay",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "game01"
+            },
+            "extract": {
+              "column": "context"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
