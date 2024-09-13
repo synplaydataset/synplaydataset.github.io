@@ -83,7 +83,8 @@ input, select, textarea {
 	}
 
 	body {
-		background: #f0f4f4;
+		/* background: #f0f4f4; modified by smeum*/ 
+		background: white;
 		color: #5b5b5b;
 		font-size: 15pt;
 		line-height: 1.85em;
@@ -101,6 +102,32 @@ input, select, textarea {
 			-ms-transition: none !important;
 			transition: none !important;
 		}
+
+	.section-title {
+		text-align: center;
+	    font-size: 2rem;
+	    margin-top: 30px;
+	    margin-bottom: 3px;
+	    color: #333;
+	    font-weight: bold;
+	    text-transform: uppercase;
+	    letter-spacing: 2px;
+	}
+	.section-description-small {
+		text-align: center;
+	    font-size: 1rem;
+	    margin-bottom: 3px;
+	    color: #333;
+	    text-transform: lowercase;
+	    letter-spacing: 2px;
+	}
+	.section-description-regular {
+		text-align: center;
+	    font-size: 2rem;
+	    margin-bottom: 3px;
+	    color: #333;
+	    letter-spacing: 2px;
+	}
 
 	input, textarea, select {
 		font-size: 15pt;
@@ -225,6 +252,76 @@ input, select, textarea {
 	.timestamp {
 		color: rgba(128, 128, 128, 0.75);
 		font-size: 0.8em;
+	}
+
+	/*Sungmin added*/
+	.dataset-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    background-color: white;
+    padding: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 1.3rem;
+	}
+	.dataset-container h2 {
+	    font-size: 1.3rem;
+	    color: #4f4c4c;
+	    
+	}
+
+	.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    background-color: white;
+    padding: 20px;
+	}
+
+
+	.team-member {
+	    background-color: white;
+	    border-radius: 8px;
+	    box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+	    overflow: hidden;
+	    text-align: center;
+	    width: 200px;
+	    padding: 15px;
+	}
+
+	.team-member img {
+	    width: 100%;
+	    object-fit: contain; /* ensures the image maintains aspect ratio */
+	    height: 170px;
+	    border-radius: 50%;
+	    overflow: hidden;
+	}
+
+	.team-member h2 {
+	    font-size: 1.15rem;
+	    margin-top: 10px;
+	    color: #4f4c4c;
+	}
+
+	.team-member p {
+	    font-size: 1.1rem;
+	    color: #666;
+	    margin-top: 5px;
+	    text-align: center;
+	}
+
+	@media (max-width: 768px) {
+	    .team-container {
+	        flex-direction: column;
+	        align-items: center;
+	    }
+
+	    .team-member {
+	        width: 80%;
+	    }
 	}
 
 /* Container */
